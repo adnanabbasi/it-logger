@@ -18,7 +18,6 @@ const App = () => {
     // Init Materialize JS
     M.AutoInit();
   });
-
   return (
     <Provider store={store}>
       <Fragment>

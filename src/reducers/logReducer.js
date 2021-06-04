@@ -42,14 +42,12 @@ const logReducer = (state = initialState, action) => {
         ...state,
         logs: state.logs.map(log =>
           log.id === action.payload.id ? action.payload : log
-        ),
-        loading: false
+        )
       };
     case SEARCH_LOGS:
       return {
         ...state,
-        logs: action.payload,
-        loading: false
+        logs: action.payload
       };
     case SET_CURRENT:
       return {
